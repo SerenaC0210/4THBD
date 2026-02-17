@@ -6,15 +6,24 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <nav id="homeNav">
-            <a href="index.html">Home</a>
-            <a href="letterA.html">Adri</a>
-            <a href="letterD.html">David</a>
-            <a href="letterJ.html">Jane</a>
-            <a href="letters.html">Serena</a>
-        </nav>
-        <h2>Dear Tammy, </h2>
-        <h3>Happy 21st Birthday!</h3>
+        <div id="homeNav">
+            <div class = "dropdown"> 
+                <button class = "dropbtn" onclick="dropDown()">Letters
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div id = "dropLetters">
+                    <a class = "tabNames" href="letterA.html">Adri</a>
+                    <a class = "tabNames" href="letterD.html">David</a>
+                    <a class = "tabNames" href="letterJ.html">Jane</a>
+                    <a class = "tabNames" href="letters.html">Serena</a>
+                </div>
+            </div>
+            <a class = "tabNames" href="memories.html">Memories</a>
+            <a class = "tabNames" href="">Placeholder for smth</a>
+            <a class = "tabNames" href="index.html">Happy Birthday Tammy!</a>
+        </div>
+        <!-- <h2>Dear Tammy, </h2>
+        <h3>Happy 21st Birthday!</h3> -->
         <link rel="script" href="scripts.js">
     </body>
 </html>
