@@ -1,3 +1,11 @@
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    25% { transform: translate(-1px, -1px) rotate(1deg); }
+    50% { transform: translate(2px, 1px) rotate(0deg); }
+    75% { transform: translate(-2px, -1px) rotate(-1deg); }
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+
 html { 
     width: 100%;
     height: 100%;
@@ -33,10 +41,12 @@ body {
 .dropbtn { 
     color: #28262C;
     cursor: pointer;
+    transition: ease-in-out 0.25s;
 }
 
 .dropbtn:hover, .dropbtn:focus { 
     color: white;
+    transform: scale(1.2);
 }
 
 .dropdown-content { 
@@ -83,10 +93,12 @@ body {
     color: #28262C;
     cursor: pointer;
     text-decoration-line: none;
+    transition: ease-in-out 0.25s;
 }
 
 .navNames:hover { 
     color: white;
+    transform: scale(1.2);
 }
 
 #footer { 
@@ -124,12 +136,18 @@ body {
     bottom: 65px;
     left: 18vw;
     height: 180px;
-  }
+
+}
+
+#loopyHeart:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
 
 :root {
     --nav-height: 66px;
     --footer-height: 66px;
-  }
+}
   
 #mainPageContainer {
     height: calc(100vh - var(--nav-height) - var(--footer-height));
@@ -141,15 +159,15 @@ body {
     align-items: center;
   
     overflow: hidden;
-  }
+}
 
-  #mainPageImages {
+#mainPageImages {
     max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-  }
+}
 
 #tammyMain { 
     height: auto;
@@ -171,5 +189,65 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20vh;   
+    margin-bottom: 30vh;
+    transition: ease-in-out 0.85s;
+}
+
+#titleAndLoopy:hover { 
+    transform: rotate(360deg);
+}
+
+/* CSS for memories page */
+#memoriesBigContainer { 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#largePhotosContainer { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+#sixPhotos { 
+    height: auto;
+    width: 40vw;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    transition:ease-in-out 0.25s;
+}
+
+.elevenPhotos { 
+    height: auto;
+    width: 25vw;
+    border-radius: 30px;
+    transition: ease-in-out 0.25s;
+}
+
+.elevenPhotos:hover, #sixPhotos:hover { 
+    transform: scale(1.05);
+}
+
+#kissyFace {
+    color: #F31C87;
+    height: 100vh;
+    line-height: 75vh;
+    font-size: 50px;
+
+}
+
+#laughingFace { 
+    color: #F31C87;
+    height: 100vh;
+    line-height: 75vh;
+    font-size: 50px;
+}
+
+#memMainContainer{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
