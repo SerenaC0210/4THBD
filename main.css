@@ -6,10 +6,19 @@
     100% { transform: translate(1px, 1px) rotate(0deg); }
 }
 
-html { 
+.noScroll { 
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: hidden;
+}
+
+.noScrollBody { 
+    background-color: #FCDCD0;
+    font-family: 'Pangolin', cursive;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -19,7 +28,6 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 #homeNav { 
@@ -251,3 +259,73 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+/* CSS for gift list */
+#giftRowsContainer { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.giftRows {  
+    background-color: #e8b1b8;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 55px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.giftRows:hover {
+    transform: scale(1.03);
+}
+
+.rowSubheadings { 
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-family: 'Pangolin', cursive;
+    color: #7a2f55;
+}
+
+.rowImages { 
+    width: auto;
+    height: 140px;
+    margin: 20px;
+}
+
+.rowText { 
+    padding: 5px;
+    color: #FFFFFF;
+    font-family: 'Pangolin', cursive;
+    color: #7a2f55;
+    padding-left: 10px;
+}
+
+.descriptions { 
+    padding-right: 3vw;
+}
+
+#conclusion { 
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #7a2f55;
+    font-family: 'Pangolin', cursive;
+}
+
+/* CSS for jane's page */
+#janeOuterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
