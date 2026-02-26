@@ -77,7 +77,7 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background: rgba(241, 123, 134, 0.7);
+    background: rgba(241, 123, 134, 0.9);
 
     font-family: 'Pangolin', cursive;
     font-style: normal;
@@ -320,8 +320,8 @@ body {
     font-family: 'Pangolin', cursive;
 }
 
-/* CSS for jane's page */
-#janeOuterContainer {
+/* CSS for jane and adri's pages */
+#janeOuterContainer, #adriOuterContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -329,3 +329,94 @@ body {
     margin-bottom: 20px;
 }
 
+#janePhoto { 
+    width: 550px;
+    height: auto;
+    margin-right: 2vw;
+    margin-left: 5vw;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+#janeTextContainer { 
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+
+#adriPhoto { 
+    width: 590px;
+    height: auto;
+    margin-right: 2vw;
+    margin-left: 5vw;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    margin-top: 3vh;
+}
+
+#adriTextContainer{
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+
+.adriBodyParagraph { 
+    font-size: 20px;
+}
+
+/* CSS for david and serena's pages */
+
+#davidOuterContainer, #serenaOuterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#davidPhoto { 
+    width: 350px;
+    height: auto;
+    margin-right: 5vw;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+#davidTextContainer {
+    margin-left: 5vw;
+    margin-right: 2vw;
+    margin-bottom: 5vh;
+}
+
+.davidBodyParagraph { 
+    font-size: 20px;
+}
+
+#serenaPhoto { 
+    width: 600px;
+    height: auto;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    border-radius: 20px;
+    margin-bottom: 5vh;
+}
+
+#serenaTextContainer { 
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 3vw;
+}
+
+.serenaBodyParagraph { 
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#hugGif { 
+    width: 140px;
+    height: auto;
+    margin-left: 22vw;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
